@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Language of Chemistry - Yashas</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f5f5fa;
+      color: #222;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    .section {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .toggle {
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .content {
+      display: none;
+      margin-top: 10px;
+    }
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 10px;
+      margin: 5px 0;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>?? The Language of Chemistry</h1>
+
+  <div class="section">
+    <div class="toggle">1. Symbols of Elements ??</div>
+    <div class="content">
+      <div class="card">H ? Hydrogen</div>
+      <div class="card">O ? Oxygen</div>
+      <div class="card">Na ? Sodium (Latin: Natrium)</div>
+      <div class="card">Fe ? Iron (Latin: Ferrum)</div>
+      <div class="card">Cu ? Copper (Latin: Cuprum)</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="toggle">2. Valency ??</div>
+    <div class="content">
+      <p>Valency = Combining power of an element.</p>
+      <ul>
+        <li>H = 1 (Monovalent)</li>
+        <li>O = 2 (Divalent)</li>
+        <li>Al = 3 (Trivalent)</li>
+        <li>C = 4 (Tetravalent)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="toggle">3. Formula Writing (Criss-Cross Method) ??</div>
+    <div class="content">
+      <div class="card">Na<sup>1+</sup> + Cl<sup>1-</sup> ? NaCl</div>
+      <div class="card">Ca<sup>2+</sup> + Cl<sup>1-</sup> ? CaCl2</div>
+      <div class="card">Al<sup>3+</sup> + O<sup>2-</sup> ? Al2O3</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="toggle">4. Percentage Composition ??</div>
+    <div class="content">
+      <p>Formula: (Mass of element / Molar mass) × 100</p>
+      <div class="card">NH4NO3 ? N: 35%, H: 5%, O: 60%</div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.toggle').forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const content = toggle.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>
